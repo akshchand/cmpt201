@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    printf("Welcome to CMPT 201\n");
-    return 0;
+    printf("Welcome to CMPT 201\n"); // print desired text to user
+    return 0; // exit function
 }
