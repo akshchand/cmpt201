@@ -1,0 +1,27 @@
+| Code                        | Question                            | Answer                                                                |
+|-----------------------------|-------------------------------------|-----------------------------------------------------------------------|
+| char a = 'Q';               | What does *ap contain?              | *ap is undefined                                                      |
+| int b;                      | What does b contain?                | b is undefined                                                        |
+| char* ap;                   |                                     |                                                                       |
+| ap = a;                     |                                     |                                                                       |
+| b = &a;                     |                                     |                                                                       |
+|-----------------------------|-------------------------------------|-----------------------------------------------------------------------|
+| char q[]="goose";           | What does *r contain [1st]?         | *r contains the character "g"                                         |
+| char *r, *s;                | What does *s contain [1st]?         | *s contains the memory address of array q                             |
+| r = &q[0];                  |                                     |                                                                       |
+| s = &q;                     | What does *r contain [2nd]?         | *r contains the character "o"                                         |
+| r++;                        | What does *s contain [2nd]?         | *s is undefined                                                       |
+| s += 2;                     |                                     |                                                                       |
+|-----------------------------|-------------------------------------|-----------------------------------------------------------------------|
+| double a = 3.14;            | Difference between *ap in "double   | *ap in "double *ap" declares a pointer                                |
+| double b;                   | *ap" and "b = *ap"?                 | *ap in "b = *ap" stores the value, using the pointer, which is 3.14   |
+| double *ap;                 |                                     |                                                                       |
+| ap = &a;                    | What does the %p represent?         | %p is used to format and print the pointer stored in ap               |
+| b = *ap;                    |                                     |                                                                       |
+| printf("%p\n",ap);          |                                     |                                                                       |
+|-----------------------------|-------------------------------------|-----------------------------------------------------------------------|
+| #define NUL '\0'            | What is the difference between NUL  | NUL is a null character, usually used to terminate strings            |
+| char a = NUL;               | and NULL?                           | NULL is used to demonstrate that a pointer doesnt point anywhere      |
+| char b = NULL;              |                                     |                                                                       |
+|                             | Purpose of NULL?                    | NULL is usually used to check if a pointer is invalid                 |
+|-------------------------------------------------------------------------------------------------------------------------------------------|
